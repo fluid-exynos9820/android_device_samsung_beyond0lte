@@ -30,13 +30,13 @@ TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_beyond0lte
+PRODUCT_NAME := fluid_beyond0lte
 PRODUCT_DEVICE := beyond0lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G970F
